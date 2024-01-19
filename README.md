@@ -1,2 +1,2 @@
 # PokeDex
-Famoso PokeDex
+Clone do PokeDex

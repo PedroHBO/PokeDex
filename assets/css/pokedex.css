@@ -3,7 +3,6 @@
     grid-template-columns: 1fr;
     margin               : 0;
     padding              : 0;
-    list-style           : none;
 }
 
 .normal {
@@ -79,12 +78,13 @@
 }
 
 .pokemon {
-    display         : flex;
-    flex-direction  : column;
-    margin          : .5rem;
-    padding         : 1rem;
-    border-radius   : 1rem;
-    background-color: #77c850;
+    display       : flex;
+    flex-direction: column;
+    margin        : .5rem;
+    padding       : 1rem;
+    border-radius : 1rem;
+    border-color  : #fff;
+    border-style  : solid;
 }
 
 .pokemon .number {
@@ -128,10 +128,37 @@
     height   : 70px;
 }
 
+#loadMoreButton {
+    height: 2rem;
+    background-color: red;
+    border-color  : #fff;
+    color: #fff;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+@media screen and (min-width: 0px) {
+    .img {
+        display: none;
+    }
+
+    .pokemon {
+        padding: 0.5rem;
+    }
+}
 
 @media screen and (min-width: 380px) {
+    .img {
+        display: block;
+    }
+
     .pokemons {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .pokemon {
+        padding: 1rem;
     }
 }
 
